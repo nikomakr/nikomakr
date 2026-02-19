@@ -13,6 +13,11 @@
 
 ---
 
+<!-- TECH-STACK-START -->
+<!-- TECH-STACK-END -->
+
+---
+
 ## 📊 GitHub Stats
 
 <div align="center">
