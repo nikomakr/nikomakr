@@ -1,0 +1,40 @@
+name: Update Tech Stack in README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # Runs daily at midnight UTC
+  workflow_dispatch:        # Allows manual trigger from GitHub UI
+  push:
+    branches: [main]        # Also runs on every push to main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # Needed to commit changes back to the repo
+
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run tech stack detector
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: nikomakr
+        run: python scripts/update_tech_stack.py
+
+      - name: Commit and push if README changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "🤖 Auto-update tech stack [skip ci]"
+          git push
