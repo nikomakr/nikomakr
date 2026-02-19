@@ -9,8 +9,6 @@
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=nikomakr)
 ![GitHub followers](https://img.shields.io/github/followers/nikomakr?style=social)
 ![GitHub User's stars](https://img.shields.io/github/stars/nikomakr?style=social)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/YOUR_LINKEDIN)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:your.email@example.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=flat&logo=google-chrome)](https://your-portfolio.com)
 
 ---
