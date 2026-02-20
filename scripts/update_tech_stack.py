@@ -40,6 +40,7 @@ BADGE_MAP = {
     "PHP":         "![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)",
     "Scala":       "![Scala](https://img.shields.io/badge/Scala-%23DC322F.svg?style=for-the-badge&logo=scala&logoColor=white)",
     "Dockerfile":  "![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)",
+    "SCSS":        "![SCSS](https://img.shields.io/badge/SCSS-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)",
 }
 
 # Languages to skip (noise / not real tech stack items)
